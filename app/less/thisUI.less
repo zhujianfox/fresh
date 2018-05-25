@@ -1,0 +1,324 @@
+// out: ../css/thisUI.css, sourcemap: true, compress: true
+// 初识值设定,1rem = 屏幕宽度/份数 px; 为了计算将rem单位放在变量中。
+// @rem ：份数/屏幕宽度 rem
+@rem: 50rem;
+@yellow: #d9b878;
+@blue: #4292ef;
+@gray: #b7b7b7;
+@black: #4c4c4c;
+@font_gray: #5d5d5d;
+@step_btn_gray: #d4d4d4;
+@step_btn_active: #4c4c4c; /* 覆盖默认样式 */
+
+body,
+h1,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+input{
+  border:none;
+  padding:0;
+  background-color: transparent;
+  color:white;
+  font-size: 24/@rem;
+  outline: none;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "微软雅黑";
+}
+
+body {
+  width: 100%;
+  overflow: auto;
+}
+/* 全局样式 */
+
+.header_top {
+  width: 100%;
+  height: 104/@rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32/@rem;
+  line-height: 104/@rem;
+
+  &.yellow {
+    background-color: @yellow;
+    color: white;
+  }
+
+  .left_btn {
+    width: 62/@rem;
+    height: 62/@rem;
+    position: absolute;
+    top: 20/@rem;
+    left: 20/@rem;
+  }
+
+  .title {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .right_btn {
+    width: 62/@rem;
+    height: 62/@rem;
+    position: absolute;
+    top: 20/@rem;
+    right: 20/@rem;
+  }
+}
+
+.footer_bottom {
+  width: 100%;
+  height: 104/@rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 32/@rem;
+  line-height: 104/@rem;
+
+  &.yellow {
+    background-color: @yellow;
+    color: white;
+  }
+
+  a{
+    width: 187/@rem;
+    height: 120/@rem;
+    display: block;
+    float: left;
+    text-align: center;
+    i{
+      width: 62/@rem;
+      height: 62/@rem;
+      margin-top: 20/@rem;
+      display: inline-block;
+    }
+  }
+
+}
+// 雪碧图
+
+.sicons_white {
+  background-image: url("../source/img/icons_white.png");
+}
+
+.sicons_dark {
+  background-image: url("../source/img/icons_dark.png");
+}
+
+.sicons_gray {
+  background-image: url("../source/img/icons_gray.png");
+}
+.yes_icon {
+  display: inline-block;
+  width: 44/@rem;
+  height: 44/@rem;
+  background-image: url("../source/img/yes.png");
+}
+.icon_back {
+  background-position: -360/@rem 0;
+}
+
+.icon_shopcar {
+  background-position: -698/@rem 0;
+}
+
+.icon_mine {
+  background-position: -280/@rem 0;
+}
+
+.icon_search {
+  background-position: -1014/@rem 0;
+}
+
+.icon_setting {
+  background-position: -1105/@rem 0;
+}
+
+.icon_pwd {
+  background-position: -96/@rem 0;
+}
+
+.icon_email {
+  background-position: 0 0;
+}
+// button 样式
+
+.btn {
+  width: 640/@rem;
+  height: 128/@rem;
+  box-sizing: border-box;
+  font-size: 28/@rem;
+  font-family: '微软雅黑';
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 2px auto;
+  display: inline-block;
+
+  &.primary_btn {
+    background-color: @yellow;
+    color: #fff;
+  }
+
+  &.blue_btn {
+    background-color: @blue;
+    color: #fff;
+  }
+
+  &.white_btn {
+    background-color: white;
+    color: @black;
+  }
+
+  &.white_border_btn {
+    border: 4px solid @yellow;
+    background-color: white;
+    color: @gray;
+  }
+
+  &.black_border_btn {
+    border: 4px solid @black;
+    background-color: white;
+    color: @black;
+  }
+}
+
+// 表单
+.input{
+  width: 640/@rem;
+  height: 128/@rem;
+  box-sizing: border-box;
+  padding-top: 27/@rem;
+  display: inline-block;
+  overflow: hidden;
+  &.white_input{
+    border-bottom: 2px solid white;
+    color:white;
+    input{
+      &::-webkit-input-placeholder{/* WebKit browsers*/
+        color:white;
+        font-size: 24/@rem;
+      }
+
+      &::-moz-placeholder { /* Mozilla Firefox 4 to 18*/
+        color:white;
+        font-size: 24/@rem;
+      }
+
+      &::-ms-input-placeholder { /* Internet Explorer 10+*/
+        color:white;
+        font-size: 24/@rem;
+      }
+    }
+  }
+  &.primary_input{
+    border-bottom: 2px solid @yellow;
+    color:@yellow;
+    input{
+      &::-webkit-input-placeholder{/* WebKit browsers*/
+        color:@black;
+        font-size: 24/@rem;
+      }
+
+      &::-moz-placeholder { /* Mozilla Firefox 4 to 18*/
+        color:@black;
+        font-size: 24/@rem;
+      }
+
+      &::-ms-input-placeholder { /* Internet Explorer 10+*/
+        color:@black;
+        font-size: 24/@rem;
+      }
+    }
+  }
+  &.error{
+    border-color: #ff5252;
+  }
+  span{
+    width: 62/@rem;
+    height: 62/@rem;
+    display: inline-block;
+    float: left;
+  }
+  input{
+    float: left;
+    margin-left: 10/@rem;
+    margin-top: 10/@rem;
+    width: 500/@rem;
+    height: 60/@rem;
+
+  }
+}
+
+
+// 全屏大小的框
+
+.fullscreen_con {
+  width: 750/@rem;
+  height: 1334/@rem;
+  text-align: center;
+  overflow: auto;
+}
+
+.fullscreen_con_padd {
+  width: 750/@rem;
+  height: 1334/@rem;
+  box-sizing: border-box;
+  padding-top: 104/@rem;
+  padding-bottom: 104/@rem;
+  text-align: center;
+  overflow: auto;
+}
+// 轮播图小点点
+
+.step_buttons {
+  height: 24/@rem;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+
+  span {
+    width: 24/@rem;
+    height: 24/@rem;
+    margin-right: 15/@rem;
+    background-color: @step_btn_gray;
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  .active {
+    background-color: @step_btn_active;
+  }
+
+  span:nth-last-child(1) {
+    margin-right: 0;
+  }
+}

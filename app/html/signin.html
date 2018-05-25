@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MONO</title>
+  <script>
+    console.log(1/window.devicePixelRatio);
+    var dpr = 1 / window.devicePixelRatio;
+    document.write('<meta name="viewport" content="width=device-width,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+',user-scalable=no" />')
+    //动态设置HTML的大小（rem）
+    var fz = document.documentElement.clientWidth / 15;
+    document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+  </script>
+  <link rel="stylesheet" href="../css/thisUI.css">
+  <link rel="stylesheet" href="../css/signin.css">
+</head>
+<body>
+    <div class="fullscreen_con">
+
+      <div class="input">
+        <span class="sicons_white icon_email"></span>
+        <input type="text" placeholder="邮箱地址">
+        <i class="yes_icon"></i>
+      </div>
+      <div class="input">
+        <span class="sicons_white icon_pwd"></span>
+        <input type="password" placeholder="请输入密码">
+        <i class="yes_icon"></i>
+      </div>
+      <a class="forgetPwd" href="javascript:;">忘记密码？</a>
+      <button class="btn primary_btn" id="login">登录</button>
+      <div class="sign">
+        还没有账号？
+        <a href="register.html">马上注册</a>
+      </div>
+    </div>
+
+
+    <script>
+        let loginBtn = document.getElementById('login');
+        let ologinBtn = document.getElementById('ologin');
+        loginBtn.onclick = function(){
+          window.location.href='welcome.html';
+        }
+        ologinBtn.onclick = function(){
+          window.location.href='welcome.html';
+        }
+    </script>
+</body>
+</html>

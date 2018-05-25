@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MONO</title>
+  <script>
+    console.log(1/window.devicePixelRatio);
+    var dpr = 1 / window.devicePixelRatio;
+    document.write('<meta name="viewport" content="width=device-width,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+',user-scalable=no" />')
+    //动态设置HTML的大小（rem）
+    var fz = document.documentElement.clientWidth / 15;
+    document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+  </script>
+  <link rel="stylesheet" href="../css/thisUI.css">
+  <link rel="stylesheet" href="../css/welcome.css">
+</head>
+<body>
+    <div class="fullscreen_con">
+        <div class="welcome_img">
+            <img src="../source/img/welcome1.png" alt="">
+        </div>
+        <div class="img_texts">
+          采用了潮流亮光涂层面料，防水防风，内里采用高密度丝光棉，轻薄，保暖舒适，和自己心爱的人一起度过这个寒冷的冬天！
+        </div>
+        <div class="step_buttons">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a href="category.html">
+          <button class="btn primary_btn">马上进入</button>
+        </a>
+    </div>
+</body>
+</html>
