@@ -22,8 +22,45 @@
   </header>
   <div class="fullscreen_con_padd">
     <div class="category_item">
-      <img src="../source/img/category_img.png" alt="">
+      <span class="category_img_span">
+        <img src="../source/img/category_img.png" alt="">
+      </span>
       <span class="category_title">时尚眼镜</span>
+      <span class="category_sub_title">244商品</span>
+    </div>
+    <div class="category_item">
+      <span class="category_img_span">
+        <img src="../source/img/category_img1.png" alt="">
+      </span>
+      <span class="category_title">潮流包包</span>
+      <span class="category_sub_title">244商品</span>
+    </div>
+    <div class="category_item">
+      <span class="category_img_span">
+        <img src="../source/img/category_img2.png" alt="">
+      </span>
+      <span class="category_title">配件</span>
+      <span class="category_sub_title">244商品</span>
+    </div>
+    <div class="category_item">
+      <span class="category_img_span">
+        <img src="../source/img/category_img.png" alt="">
+      </span>
+      <span class="category_title">时尚眼镜</span>
+      <span class="category_sub_title">244商品</span>
+    </div>
+    <div class="category_item">
+      <span class="category_img_span">
+        <img src="../source/img/category_img1.png" alt="">
+      </span>
+      <span class="category_title">潮流包包</span>
+      <span class="category_sub_title">244商品</span>
+    </div>
+    <div class="category_item">
+      <span class="category_img_span">
+        <img src="../source/img/category_img2.png" alt="">
+      </span>
+      <span class="category_title">配件</span>
       <span class="category_sub_title">244商品</span>
     </div>
   </div>
@@ -33,5 +70,20 @@
     <a href="javascript:;"><i class="sicons_white icon_search"></i></a>
     <a href="javascript:;"><i class="sicons_white icon_setting"></i></a>
   </footer>
+
+
+
+
+  <script>
+      const divs = document.querySelectorAll('.category_item');
+      console.log(divs)
+
+      for(let i=0;i<divs.length;i++){
+        divs[i].onclick = function(){
+          window.location.href='goodslist.html';
+        }
+      }
+
+  </script>
 </body>
 </html>

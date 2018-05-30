@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MONO</title>
+  <script>
+    console.log(1/window.devicePixelRatio);
+    var dpr = 1 / window.devicePixelRatio;
+    document.write('<meta name="viewport" content="width=device-width,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+',user-scalable=no" />')
+    //动态设置HTML的大小（rem）
+    var fz = document.documentElement.clientWidth / 15;
+    document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+  </script>
+  <link rel="stylesheet" href="../css/thisUI.css">
+  <link rel="stylesheet" href="../css/goodslist.css">
+</head>
+<body>
+  <header class="header_top yellow">
+    <span class="left_btn sicons_white icon_back"></span>
+    <span class="title">商品列表</span>
+    <span class="right_btn sicons_white icon_shopcar"></span>
+  </header>
+  <div class="fullscreen_con_padd">
+      <div class="goodslist">
+        <a href="javascript:;" class="goodslist_item">
+            <span class="goodslist_bg">
+              <img src="../source/img/goods_img.png" alt="">
+            </span>
+            <span class="goods_name">The Light Poplin</span>
+            <span class="goods_category">Norse Projects</span>
+            <span class="goods_price">435 元</span>
+        </a>
+        <a href="javascript:;" class="goodslist_item">
+            <span class="goodslist_bg">
+              <img src="../source/img/goods_img1.png" alt="">
+            </span>
+            <span class="goods_name">时尚女款外套</span>
+            <span class="goods_category">JESS Brand</span>
+            <span class="goods_price">435 元</span>
+        </a>
+        <a href="javascript:;" class="goodslist_item">
+            <span class="goodslist_bg">
+              <img src="../source/img/goods_img2.png" alt="">
+            </span>
+            <span class="goods_name">时尚女款外套</span>
+            <span class="goods_category">JESS Brand</span>
+            <span class="goods_price">400 元</span>
+        </a>
+        <a href="javascript:;" class="goodslist_item">
+            <span class="goodslist_bg">
+              <img src="../source/img/goods_img.png" alt="">
+            </span>
+            <span class="goods_name">The Light Poplin</span>
+            <span class="goods_category">Norse Projects</span>
+            <span class="goods_price">435 元</span>
+        </a>
+        <a href="javascript:;" class="goodslist_item">
+            <span class="goodslist_bg">
+              <img src="../source/img/goods_img.png" alt="">
+            </span>
+            <span class="goods_name">The Light Poplin</span>
+            <span class="goods_category">Norse Projects</span>
+            <span class="goods_price">435 元</span>
+        </a>
+        <a href="javascript:;" class="goodslist_item">
+            <span class="goodslist_bg">
+              <img src="../source/img/goods_img1.png" alt="">
+            </span>
+            <span class="goods_name">时尚女款外套</span>
+            <span class="goods_category">JESS Brand</span>
+            <span class="goods_price">435 元</span>
+        </a>
+        <a href="javascript:;" class="goodslist_item">
+            <span class="goodslist_bg">
+              <img src="../source/img/goods_img2.png" alt="">
+            </span>
+            <span class="goods_name">时尚女款外套</span>
+            <span class="goods_category">JESS Brand</span>
+            <span class="goods_price">400 元</span>
+        </a>
+        <a href="javascript:;" class="goodslist_item">
+            <span class="goodslist_bg">
+              <img src="../source/img/goods_img.png" alt="">
+            </span>
+            <span class="goods_name">The Light Poplin</span>
+            <span class="goods_category">Norse Projects</span>
+            <span class="goods_price">435 元</span>
+        </a>
+      </div>
+  </div>
+  <footer class="footer_bottom yellow">
+    <a href="javascript:;"><i class="sicons_white icon_shopcar"></i></a>
+    <a href="javascript:;"><i class="sicons_white icon_mine"></i></a>
+    <a href="javascript:;"><i class="sicons_white icon_search"></i></a>
+    <a href="javascript:;"><i class="sicons_white icon_setting"></i></a>
+  </footer>
+
+
+
+
+  <script>
+      // const divs = document.querySelectorAll('.category_item');
+      // console.log(divs)
+      //
+      // for(let i=0;i<divs.length;i++){
+      //   div.onclick = function(){
+      //     window.location.href='signin.html';
+      //   }
+      // }
+
+  </script>
+</body>
+</html>
