@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MONO</title>
+  <script>
+    console.log(1/window.devicePixelRatio);
+    var dpr = 1 / window.devicePixelRatio;
+    document.write('<meta name="viewport" content="width=device-width,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+',user-scalable=no" />')
+    //动态设置HTML的大小（rem）
+    var fz = document.documentElement.clientWidth / 15;
+    document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+  </script>
+  <link rel="stylesheet" href="../css/thisUI.css">
+  <link rel="stylesheet" href="../css/goods_info.css">
+</head>
+<body>
+  <header class="header_top yellow">
+    <span class="left_btn sicons_white icon_back"></span>
+    <span class="title">商品列表</span>
+    <span class="right_btn sicons_white icon_shopcar"></span>
+  </header>
+  <div class="fullscreen_con_padd">
+      <div class="goods_info_img">
+          <img src="../source/img/goods_info_img.png" alt="">
+          <div class="step_buttons">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+          </div>
+      </div>
+
+  </div>
+  <footer class="footer_bottom yellow">
+    <a href="javascript:;"><i class="sicons_white icon_shopcar"></i></a>
+    <a href="javascript:;"><i class="sicons_white icon_mine"></i></a>
+    <a href="javascript:;"><i class="sicons_white icon_search"></i></a>
+    <a href="javascript:;"><i class="sicons_white icon_setting"></i></a>
+  </footer>
+
+
+
+
+  <script>
+      // const divs = document.querySelectorAll('.category_item');
+      // console.log(divs)
+      //
+      // for(let i=0;i<divs.length;i++){
+      //   div.onclick = function(){
+      //     window.location.href='signin.html';
+      //   }
+      // }
+
+  </script>
+</body>
+</html>
